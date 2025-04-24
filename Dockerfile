@@ -1,7 +1,8 @@
 FROM nginx:alpine
 
 # Copy the HTML file to the Nginx html directory
-COPY *.* /usr/share/nginx/html/
+COPY *.html /usr/share/nginx/html/
+COPY /assets/ /usr/share/nginx/html/assets/
 
 # Create images directory
 #RUN mkdir -p /usr/share/nginx/html/images
